@@ -1,0 +1,73 @@
+{
+  "name": "FamilyMember",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "relation": {
+      "type": "string",
+      "enum": [
+        "Self",
+        "Father",
+        "Mother",
+        "Spouse",
+        "Son",
+        "Daughter",
+        "Brother",
+        "Sister",
+        "Grandfather",
+        "Grandmother",
+        "Other"
+      ]
+    },
+    "age": {
+      "type": "number"
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "annual_income": {
+      "type": "number",
+      "default": 0
+    },
+    "aadhaar_linked": {
+      "type": "boolean",
+      "default": false
+    },
+    "student": {
+      "type": "boolean",
+      "default": false
+    },
+    "senior_citizen": {
+      "type": "boolean",
+      "default": false
+    },
+    "disability": {
+      "type": "boolean",
+      "default": false
+    },
+    "bpl_category": {
+      "type": "boolean",
+      "default": false
+    },
+    "avatar": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "relation",
+    "age",
+    "gender",
+    "occupation"
+  ]
+}

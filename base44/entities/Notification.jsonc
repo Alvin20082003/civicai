@@ -1,0 +1,66 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_ta": {
+      "type": "string"
+    },
+    "description_en": {
+      "type": "string"
+    },
+    "description_ta": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "success",
+        "warning",
+        "info",
+        "action_required"
+      ],
+      "default": "info"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "status_change",
+        "action_required",
+        "document",
+        "policy",
+        "system"
+      ],
+      "default": "status_change"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false
+    },
+    "application_id": {
+      "type": "string"
+    },
+    "service_name": {
+      "type": "string"
+    },
+    "action_label_en": {
+      "type": "string"
+    },
+    "action_label_ta": {
+      "type": "string"
+    },
+    "action_link": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title_en",
+    "title_ta",
+    "description_en",
+    "description_ta",
+    "type",
+    "category"
+  ]
+}
