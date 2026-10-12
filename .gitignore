@@ -30,3 +30,9 @@ dist-ssr
 .env
 .vite
 base44/.app.jsonc
+
+# Local tooling
+.claude/
+
+# Allow the env template
+!.env.example
